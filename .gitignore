@@ -1,10 +1,16 @@
 
+<<<<<<< Updated upstream
 .env
 node_modules/.bin/acorn
 node_modules/.bin/acorn.cmd
 node_modules/.bin/acorn.ps1
 node_modules/.bin/mime
 node_modules/.bin/mime.cmd
+=======
+node_modules/.bin/mime.cmd
+node_modules/.bin/acorn.ps1
+node_modules/.bin/mime
+>>>>>>> Stashed changes
 node_modules/.bin/mime.ps1
 node_modules/.bin/prisma
 node_modules/.bin/prisma.cmd
@@ -878,6 +884,10 @@ node_modules/prisma/build/public/index.css
 node_modules/prisma/build/public/pages/http/databrowser.html
 node_modules/prisma/build/public/pages/http/splash.html
 node_modules/prisma/build/xdg-open
+<<<<<<< Updated upstream
+=======
+node_modules/prisma/engines/0ca5ccbcfa6bdc81c003cf549abe4269f59c41e5/query_engine-windows.dll.node
+>>>>>>> Stashed changes
 node_modules/prisma/LICENSE
 node_modules/prisma/package.json
 node_modules/prisma/preinstall/index.js
@@ -1303,5 +1313,8 @@ node_modules/yn/lenient.js
 node_modules/yn/license
 node_modules/yn/package.json
 node_modules/yn/readme.md
+<<<<<<< Updated upstream
 package-lock.json
 package-lock.json
+=======
+>>>>>>> Stashed changes
