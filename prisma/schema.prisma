@@ -13,7 +13,6 @@ model Loja {
   descricao  String
   technicalData String
   imagem     String
-
   carrosLoja CarroLoja[]
 }
 
