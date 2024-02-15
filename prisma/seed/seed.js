@@ -6,43 +6,43 @@ async function seed() {
     // Datos para la primera loja
     const loja1 = await prisma.loja.create({
       data: {
-        nome: "Aveiro",
-        descricao: "Localizada na encantadora cidade de Aveiro...",
-        technicalData: "Largo da Estação dos Caminhos de Ferro, 3800-179,",
-        imagem: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Ria_de_Aveiro_edited_%28cropped%29.jpg/1920px-Ria_de_Aveiro_?",
+        nome: "Viana do Castelo",
+        descricao: "Morada: Rua do Bairro do Mirante, 25 r/c , 4900-642 Areosa",
+        technicalData: "Empresa de aluguer de carros desde 2013",
+        imagem: "https://www.cm-viana-castelo.pt/wp-content/uploads/2023/07/DJI_0529-scaled.jpg",
       }, 
     });
     
     const loja2 = await prisma.loja.create({
       data: {
         nome: "Braga",
-            descricao: "Localizada na histórica cidade de Braga, conhecida por sua rica herança cultural e arquitetura impressionante. Temos o prazer de oferecer uma ampla frota de veículos modernos e bem conservados para atender às necessidades de nossos clientes.",
-            technicalData: " Largo da Estação, 4700-223",
-            imagem: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Arco_da_Porta_Nova_-_panoramio.jpg/1280px-Arco_da_Porta_Nova_-_panoramio.jpg?",
+            descricao: "Morada: Edifício Só Barroso Av. da Independência, nº 3, 4705-162 - Nogueira | Braga",
+            technicalData: " Empresa de aluguer de carros desde 2009",
+            imagem: "https://lp-cms-production.imgix.net/2019-06/GettyImages-149519944_super%20copy.jpg",
       },
     });
     const loja3 = await prisma.loja.create({
       data: {
-        nome: "Coimbra",
-              descricao: "Situada na histórica cidade de Coimbra, conhecida por sua prestigiosa universidade e charme arquitetônico. Estamos dedicados a oferecer uma ampla frota de veículos modernos e bem conservados para atender às necessidades dos nossos clientes.",
-              technicalData: "Largo da Ameias, 3000-024",
-              imagem: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Universidade_de_Coimbra_no_topo_%286167202913%29.jpg/1280px-Universidade_de_Coimbra_no_topo_%286167202913%29.jpg?",
+        nome: "Lisboa",
+              descricao: "Morada: Estrada da Serra da Mira Lote 12 - Loja Dta. 2700-786 Amadora",
+              technicalData: "Empresa de aluguer de carros desde 2003",
+              imagem: "https://forbespt.fra1.digitaloceanspaces.com/wp-content/uploads/2021/06/23071356/lisboa-1.jpg",
       },
     });
     const loja4 = await prisma.loja.create({
       data: {
-        nome: "Lisboa",
-                  descricao: "Localizada na vibrante cidade de Lisboa, conhecida por sua rica história, arquitetura encantadora e atmosfera cosmopol",
-                  technicalData: "Edifício Gare do Oriente, Piso 1 - Av. D. João II, 1900-233",
-                  imagem: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Lisbon_%2836831596786%29_%28cropped%29.jpg/1920px-Lisbon_%2836831596786%29_%28cropped%29.jpg?",  
+        nome: "Coimbra",
+                  descricao: "Morada: Rua do Mainho Cruzamento Sargento-Mor, 3020-832 Souselas",
+                  technicalData: "Empresa de aluguer de carros desde 1983",
+                  imagem: "https://www.civitatis.com/f/portugal/coimbra/coimbra-m.jpg",  
       },
     });
     const loja5 = await prisma.loja.create({
       data: {
-        nome: "Porto",
-                      descricao: "Situada na dinâmica cidade do Porto, famosa por suas pontes icônicas, cultura vibrante e gastronomia única. Nosso compromisso é fornecer uma experiência de aluguel de Veículos excepcional, disponibilizando uma frota diversificada de veículos modernos e bem conservados.",
-                      technicalData: "Praça Almeida Garrett, 4000-069",
-                      imagem: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Puente_Don_Luis_I%2C_Oporto%2C_Portugal%2C_2012-05-09%2C_DD_13.JPG/1920px-Puente_Don_Luis_I%2C_Oporto%2C_Portugal%2C_2012-05-09%2C_DD_13.JPG?",
+        nome: "Leiria",
+                      descricao: "Morada: IC2 KM 129 - BoaVista 2420 - 381 Leiria",
+                      technicalData: "Empresa de aluguer de carros desde 2007",
+                      imagem: "https://eurotrip.com.br/wp-content/uploads/2020/04/leiria-portugal.jpg",
       },
     });
     const loja6 = await prisma.loja.create({
@@ -50,7 +50,7 @@ async function seed() {
                     nome: "Faro",
                     descricao: "Encontra-se no coração da deslumbrante região do Algarve. Especializamo-nos em proporcionar uma experiência única, permitindo que os nossos clientes explorem as magníficas praias locais e desfrutem plenomente do sol e do mar.",
                     technicalData: "Largo da Estação dos Caminhos de Ferro, 8000-133",
-                    imagem: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Faro_-_Portugal_%2816083970893%29_%28cropped%29.jpg/2560px-Faro_-_Portugal_%2816083970893%29_%28cropped%29.jpg?",
+                    imagem: "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcQKM88QJrHh_E8w8bee84gtevSzXdj94MmXf9VJQDKzJHul7FXRtpqDFuAWcbxlKmf0c-ktt2c9_gL2tZx5MUPQHeBpRzY98J2Dif-Nug",
       },
     });
     const loja7 = await prisma.loja.create({
@@ -58,15 +58,15 @@ async function seed() {
                        nome: "Funchal",
                       descricao: "Situada na deslumbrante cidade do Funchal, na ensolarada ilha da Madeira. Nosso objetivo é proporcionar aos nossos clientes uma experiência de condução única, permitindo-lhes explorar as belezas naturais e os encantos da ilha.",
                       technicalData: " Santa Cruz,9100-105 ",
-                      imagem: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/D8E_2941_%2812120800265%29.jpg/1920px-D8E_2941_%2812120800265%29.jpg?",
+                      imagem: "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcScxnaMPgfIE7INosan1YNUB7k2m6fL_3B0HV-udnv5VAbIK4-LGsXrFsMR18_ZL6NZ75gMbeltO_902v_4-nbVKA7d0nkBqYRKROkxxkQ",
       },
     });
     const loja8 = await prisma.loja.create({
       data: {
-                      nome: "Viana do Castelo",
+                      nome: "Aveiro",
                       descricao: " Encontra-se na encantadora cidade de Viana do Castelo, conhecida por sua arquitetura histórica, rica herança cultural e proximidade com a costa atlântica. Nosso compromisso é fornecer aos clientes uma experiência de aluguel de Veículos conveniente e personalizada.",
                       technicalData: "Av. Combatentes da Grande Guerra, 4900-563",
-                      imagem: "https://upload.wikimedia.org/wikipedia/commons/b/ba/Viana_do_Castelo_%28cropped%29.JPG?",
+                      imagem: "https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcRzCb06tmoYXB0s5rjOJkrvtumeNNFDyxxUbfdH8AyBRVy552t-rUsv_cNNhH8HmzQE",
       },
     });
 
