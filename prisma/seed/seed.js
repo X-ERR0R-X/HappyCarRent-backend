@@ -3,7 +3,6 @@ const prisma = new PrismaClient();
 
 async function seed() {
   try {
-    // Datos para la primera loja
     const loja1 = await prisma.loja.create({
       data: {
         nome: "Aveiro",
@@ -72,10 +71,10 @@ async function seed() {
 
     const frota1 = await prisma.frota.create({
       data: { 
-        nome: "Honda CR-V",
-        descricao: "SUV compacto com características todo-terreno.",
-        technicalData: "SUV",
-        imagem: "https://static.wixstatic.com/media/19f4e1_2c6989b6fa3947f3b1bb0354a890c306~mv2.png/v1/fill/w_640,h_400,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Toyota%20Raize%201%20xs.png?",
+        nome: "Toyota Corolla",
+        descricao: "Estilo clássico e atemporal, com ênfase na eficiência aerodinâmica, Linhas elegantes e detalhes modernos, Possíveis opções de pintura e acabamento",
+        technicalData: "Motores eficientes para economia de combustível, Opções de transmissão manual ou automática, Desempenho equilibrado para atender às necessidades do dia a dia",
+        imagem: "https://kong-proxy-intranet.toyota-europe.com/c1-images/resize/ccis/1280x1280/zip/pt/configurationtype/visual-for-grade-selector/product-token/ebadee5e-5ac7-4501-9b41-7786432cb0c1/grade/93e19bae-b1c0-4535-9917-e7021b6a763d/body/7b77d85b-8f26-4645-82ac-22154a7d6293/fallback/true/padding/50,50,50,50/image-quality/70/day-exterior-4.png",
         carrosLoja: {
           create: [
             { loja: { connect: { id: 1 } } },
@@ -86,10 +85,10 @@ async function seed() {
     });
     const frota2 = await prisma.frota.create({
       data: { 
-           nome: "Toyota Camry",
-           descricao: "Sedã de alta qualidade.",
-           technicalData: "Sedan",
-             imagem: "https://www.toyota.com/imgix/content/dam/toyota/jellies/max/2024/camry/xse/2548/2pt/36/5.png?fm=png&w=930&q=90?",
+           nome: "2023 Honda Civic Type R",
+           descricao: "Estilo arrojado e esportivo, com elementos distintivos do Type R, Acentos agressivos, grade frontal distinta e detalhes aerodinâmicos, Possíveis opções de pintura e acabamentos esportivos",
+           technicalData: "Sistema de infoentretenimento com foco na conectividade, Recursos de assistência ao motorista, como alerta de colisão e sistema de frenagem automática, Cluster de instrumentos digital personalizável",
+             imagem: "https://paultan.org/image/2023/09/2023_Honda_Civic_TypeR_Launch_Malaysia-2.jpg",
              carrosLoja: {
               create: [
                 { loja: { connect: { id: 1 } } },  
@@ -100,10 +99,10 @@ async function seed() {
     });
     const frota3 = await prisma.frota.create({
       data: { 
-        nome: "Ford Mustang",
-      descricao: "Coupé desportivo com design elegante.",
-      technicalData: "Coupe",
-      imagem: "https://purepng.com/public/uploads/large/purepng.com-ford-mustangford-mustangford-falconcompact-carcars-1701527482048rotru.png?",
+        nome: "2024 Acura Integra",
+      descricao: "Estilo inspirado nas linhas modernas e elegantes da Acura, Detalhes aerodinâmicos e distintivos, Possíveis opções de pintura e acabamento premium",
+      technicalData: "Motor eficiente e potente para desempenho equilibrado, Opções de transmissão automática ou manual, Tecnologias voltadas para uma condução dinâmica",
+      imagem: "https://www.motortrend.com/uploads/2023/04/2024-Acura-Integra-Type-S-21.jpg",
       carrosLoja: {
         create: [
           { loja: { connect: { id: 1 } } },   
@@ -113,10 +112,10 @@ async function seed() {
     });
     const frota4 = await prisma.frota.create({
       data: { 
-        nome: "Volkswagen Golf",
-      descricao: "Hatchback versátil e eficiente em combustivel.",
-      technicalData: "Hatchback",
-      imagem: "https://pngimg.com/d/volkswagen_PNG1793.png?",
+        nome: "2024 Honda Civic",
+      descricao: "Estilo moderno e inovador que reflete a evolução do design Honda, Linhas aerodinâmicas e detalhes distintos para uma presença visual marcante, Ambiente interno projetado para oferecer amplo espaço e conforto aos ocupantes",
+      technicalData: "Motor: 2.0L, 4 cilindros, Potência: 143 hp @ 6,000 rpm, Transmissão: Automática, Consumo de Combustível: 18.3L/100 (cidade) / 15.9L/100 (estrada)",
+      imagem: "https://vehicle-images.dealerinspire.com/3066-11001513/19XFL2G85RE005045/cae208ebd38e028c6db3e3e3f8de3961.jpg",
       carrosLoja: {
         create: [
           { loja: { connect: { id: 1 } } },  
@@ -127,10 +126,10 @@ async function seed() {
     });
     const frota5 = await prisma.frota.create({
       data: { 
-        nome: "Jeep Wrangler",
-      descricao: "Veículo todo-terreno conversível.",
-      technicalData: "SUV",
-      imagem: "https://pngimg.com/d/jeep_PNG49.png?",
+        nome: "Audi A4",
+      descricao: "Linhas elegantes e contornos distintos que caracterizam o design da marca Audi, Grade dianteira trapezoidal e elementos de iluminação LED para uma identidade visual forte, Design aerodinâmico para otimizar a eficiência de combustível e melhorar o desempenho em altas velocidades, Acabamentos refinados, detalhes cromados e jantes de liga leve para um toque de sofisticação",
+      technicalData: "Opções de motores a gasolina ou diesel, com diferentes níveis de potência, Aceleração, velocidade máxima e eficiência de combustível dependendo da configuração do motor, Opções de transmissão automática ou manual, dependendo da preferência e configuração, Variantes com tração dianteira ou integral (Quattro) dependendo da configuração escolhida",
+      imagem: "https://cf-cdn-v5.audi.at/media/GalleryThumbnails_Slider_Image_Component/72903-761229-slider-470189/dh-1460-a9ad28/d4657f1a/1685948687/1920x1080-aa4-l-191004-oe.jpg",
       carrosLoja: {
         create: [
           { loja: { connect: { id: 5 } } },  
@@ -141,10 +140,10 @@ async function seed() {
     });
     const frota6 = await prisma.frota.create({
       data: { 
-        nome: "Tesla Model 3",
-      descricao: "Automóvel elétrico com tecnologia avançada.",
-      technicalData: "Elétrico",
-      imagem: "https://service.tesla.com/docs/Public/diy/imagems/GUID-BEE67A59-6DD7-460C-9C49-0DD47E707A02-online-en-US.png?",
+        nome: "Chevrolet Onix Plus",
+      descricao: "Linhas contemporâneas e design aerodinâmico que refletem a identidade moderna da Chevrolet, Grade frontal atraente, faróis distintivos e detalhes cromados para um visual marcante, Dimensões compactas para facilitar a condução urbana, sem comprometer a elegância",
+      technicalData: "Motores eficientes em termos de combustível, oferecendo uma combinação de desempenho e economia, Opções de transmissão automática ou manual, dependendo da preferência e configuração, Aceleração, velocidade máxima e eficiência de combustível adaptadas para atender às necessidades urbanas e rodoviárias",
+      imagem: "https://t.ctcdn.com.br/ttMiIkufJ9iruWRsKnvSbCajM6k=/1200x675/smart/i624421.jpeg",
       carrosLoja: {
         create: [
           { loja: { connect: { id: 1 } } },  
@@ -156,10 +155,10 @@ async function seed() {
     });
     const frota7 = await prisma.frota.create({
       data: { 
-        nome: "Chevrolet Silverado",
-        descricao: "Pick-up resistente e capaz de transportar carga pesada.",
-        technicalData: "Pick-up",
-        imagem: "https://chevrolet.com.gt/wp-content/uploads/2022/08/silveradoblanco.png?",
+        nome: "Honda City",
+        descricao: "Linhas modernas e design elegante que representam a estética característica da Honda, Grade frontal distintiva, faróis afilados e detalhes aerodinâmicos, Design compacto para manobras fáceis na cidade, sem comprometer a funcionalidade",
+        technicalData: "Motores otimizados para desempenho e eficiência de combustível, Opções de transmissão automática ou manual, dependendo da configuração escolhida, Aceleração, velocidade máxima e eficiência de combustível adaptados às necessidades urbanas e rodoviárias",
+        imagem: "https://upload.wikimedia.org/wikipedia/commons/1/1f/0_Honda_City_%287th_generation%29_sedan.jpg",
         carrosLoja: {
           create: [
             { loja: { connect: { id: 5 } } },  
@@ -171,10 +170,10 @@ async function seed() {
     });
     const frota8 = await prisma.frota.create({
       data: { 
-        nome: "Kia Soul",
-        descricao: "Hatchback compacto com design distintivo.",
-        technicalData: "Hatchback",
-        imagem: "https://pngimg.com/d/kia_PNG71.png?",
+        nome: "Fiat Grand Siena",
+        descricao: "Linhas modernas e design sólido que define a presença do Fiat Grand Siena, Detalhes aerodinâmicos e estilizados para uma estética atraente, Design compacto e funcional para facilitar a condução urbana e maximizar a eficiência de espaço",
+        technicalData: "Motores otimizados para proporcionar equilíbrio entre desempenho e eficiência de combustível, Opções de transmissão manual ou automática, dependendo da configuração escolhida, Aceleração, velocidade máxima e eficiência de combustível adaptados às características do veículo",
+        imagem: "https://uploads.vrum.com.br/2022/08/74438a8a-fiat-grand-siena-modelo-2020-com-kit-gnv-vermelho-de-frente-no-asfalto.jpg",
         carrosLoja: {
           create: [
             { loja: { connect: { id: 1 } } },  
